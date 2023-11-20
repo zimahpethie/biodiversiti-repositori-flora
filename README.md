@@ -15,7 +15,7 @@ Biodiversiti Repositori Flora is a system designed to store data related to the 
 
 ## Use the system
 1. If you want to CRUD data, login as admin:
-- email: admin#gmail.com
+- email: admin@gmail.com
 - pw: admin123
 
 2. If you want to test the search query, can try or any other than this also can:
