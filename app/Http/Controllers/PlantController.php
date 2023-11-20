@@ -62,10 +62,10 @@ class PlantController extends Controller
     
         // Return the search view with the resluts compacted
         if(auth()->check() && auth()->user()->is_admin == 1){
-            return view('adminSearch', ['plants' => $plants])->with($search);
-        }else{
-            return view('search', ['plants' => $plants])->with($search);
-        }
+            return view('adminSearch', ['plants' => $plants, 'query' => $search])->with($search);
+        } else {
+            return view('search', ['plants' => $plants, 'query' => $search])->with($search);
+        }        
     }
 
     /**
@@ -107,7 +107,7 @@ class PlantController extends Controller
         $input = $request->except(['_token']);
     
         if ($image = $request->file('image')) {
-            $input['image'] = $image->store('plant', 'public');
+            $input['image'] = $image->store('plants', 'public');
         }
     
         Plant::create($input);
@@ -179,7 +179,7 @@ class PlantController extends Controller
             }
     
             // Store the new image
-            $input['image'] = $image->store('plant', 'public');
+            $input['image'] = $image->store('plants', 'public');
         }
     
         $plant->update($input);

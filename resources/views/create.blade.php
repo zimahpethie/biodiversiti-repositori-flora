@@ -166,7 +166,7 @@
                     <div class="card-body">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                             <button type="reset" class="btn btn-secondary me-md-2">Reset</button>
-                            <button type="submit" class="btn btn-primary">Hantar</button>   
+                            <button type="submit" class="btn btn-primary">Simpan</button>   
                         </div>
                     </div>
                 </div>
