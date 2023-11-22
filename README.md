@@ -21,4 +21,6 @@ Biodiversiti Repositori Flora is a system designed to store data related to the 
 2. If you want to test the search query, can try or any other than this also can:
 "Tumbuhan yang boleh merawat sakit sendi"
 
+ERD
+![image](https://github.com/zimahpethie/biodiversiti-repositori-flora/assets/74373523/8f652c18-ea7c-403a-950c-dd736c51bd79)
 
